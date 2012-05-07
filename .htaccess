@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^benchmark.pagodabox.com[nc]
+RewriteRule ^(.*)$ http://www.benchmark.pagodabox.com/$1 [r=301,nc]
