@@ -12,6 +12,8 @@ web1:
       - sockets
       - redis
       - gd
+   after_build:
+      - curl -s http://getcomposer.org/installer | php
 db1:
    name: benchmark
 
