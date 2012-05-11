@@ -12,11 +12,16 @@ web1:
       - sockets
       - redis
       - gd
-   after_build:
-      - curl -s http://getcomposer.org/installer | php
-      - php composer.phar install
+#   after_build:
+#      - curl -s http://getcomposer.org/installer | php
+#      - php composer.phar install
 db1:
    name: benchmark
 
 cache1:
    name: benchmark
+   type: memcache
+
+cache2:
+   name: redis
+   type: redis
