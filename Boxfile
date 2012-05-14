@@ -12,8 +12,8 @@ web1:
       - sockets
       - redis
       - gd
-   after_build:
-      - php composer.phar install
+#   after_build:
+#      - php composer.phar install
 db1:
    name: benchmark
 
