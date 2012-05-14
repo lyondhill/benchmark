@@ -1,3 +1,3 @@
 <?php
-header('Location: https://benchmark.pagodabox.com/static.php');
+header('Location: https://migratetest.pagodabox.com/static.php');
 ?>
