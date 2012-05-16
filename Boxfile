@@ -28,4 +28,4 @@ cache2:
    name: redis
    type: redis
 worker1:
-   exec: worker.php
+   exec: php worker.php
