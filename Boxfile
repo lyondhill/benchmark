@@ -15,8 +15,6 @@ web1:
       - zip
       - phar
    after_build:
-      - curl -s http://getcomposer.org/installer | php #here we go!
-      - php composer.phar install
 db1:
    name: benchmark
 
