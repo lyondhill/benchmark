@@ -14,7 +14,6 @@ web1:
       - gd
       - zip
       - phar
-   after_build:
 db1:
    name: benchmark
 
