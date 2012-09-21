@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect($_SERVER['DATABASE1_HOST'],$_SERVER['DATABASE1_USER'],$_SERVER['DATABASE1_PASS']);
+$con = mysqli_connect($_SERVER['DATABASE1_HOST'].":".$_SERVER['DATABASE1_PORT'],$_SERVER['DATABASE1_USER'],$_SERVER['DATABASE1_PASS']);
 if (!$con)
   {
   die('Could not connect: ' . mysqli_error());
