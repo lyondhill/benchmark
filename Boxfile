@@ -3,6 +3,12 @@ global:
   env:
     - TEST_EMAIL: braxton@pagodabox.com
 web1:
+   after_build:
+      - "ps faux"
+   before_deploy:
+      - "ps faux"
+   after_deploy:
+      - "ps faux"
    type: php
    name: benchmark
    shared_writable_dirs:
@@ -19,16 +25,40 @@ web1:
       - zip
       - phar
 db1:
+   after_build:
+      - "ps faux"
+   before_deploy:
+      - "ps faux"
+   after_deploy:
+      - "ps faux"
    type: mysql
    name: benchmark
 
 cache1:
+   after_build:
+      - "ps faux"
+   before_deploy:
+      - "ps faux"
+   after_deploy:
+      - "ps faux"
    name: benchmark
    type: memcached
 
 cache2:
+   after_build:
+      - "ps faux"
+   before_deploy:
+      - "ps faux"
+   after_deploy:
+      - "ps faux"
    name: redis
    type: redis
 worker1:
+   after_build:
+      - "ps faux"
+   before_deploy:
+      - "ps faux"
+   after_deploy:
+      - "ps faux"
    type: php
    exec: php worker.php
