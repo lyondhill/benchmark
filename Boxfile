@@ -1,4 +1,7 @@
 ###no comment###
+global:
+  env:
+    - TEST_EMAIL: braxton@pagodabox.com
 web1:
    type: php
    name: benchmark
