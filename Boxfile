@@ -16,6 +16,7 @@ web1:
       - zip
       - phar
 db1:
+   type: mysql
    name: benchmark
 
 cache1:
